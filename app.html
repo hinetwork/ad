@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Android App</title>
+    <style>
+        html {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        a {
+            cursor: pointer
+        }
+        
+        * {
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        body {
+            overflow-x: hidden;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .Anchor {
+            text-decoration: none;
+            color: red
+        }
+        
+        .DownlaodDiv {
+            font-size: 20px;
+            text-decoration: none;
+        }
+        
+        .H3 {
+            text-align: center;
+            color: red;
+            font-size: 19px;
+            font-weight: 400;
+            width: 400px;
+            margin: auto;
+        }
+        
+        #BtnAndroid {
+            border: none;
+            padding: 8px;
+            color: white;
+            background: darkblue;
+            border-radius: 3px;
+        }
+        
+        #BtnDesktop {
+            border: none;
+            padding: 8px;
+            color: white;
+            background: black;
+            border-radius: 3px;
+        }
+        
+        #Modal1,
+        #Modal2 {
+            display: none;
+            position: absolute;
+            z-index: 20;
+            padding-top: 10px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: black;
+            overflow: auto;
+        }
+        
+        #ModalContent1 {
+            margin: auto;
+            padding: 4px;
+            border: 1px solid #888;
+            width: 490px;
+            border-radius: 7px;
+            background: white;
+            padding-top: 10px;
+            height: 1600px;
+            text-align: center;
+        }
+        
+        #ModalContent2 {
+            margin: auto;
+            padding: 4px;
+            border: 1px solid #888;
+            width: 490px;
+            border-radius: 7px;
+            background: white;
+            padding-top: 10px;
+            height: 3200px;
+            text-align: center;
+        }
+        
+        #CloseModal1,
+        #CloseModal2 {
+            float: right;
+            background-color: red;
+            color: white;
+            font-size: 20px;
+            padding: 2px 6px;
+            border: none;
+            border-radius: 3px;
+            margin-right: 3px;
+        }
+        
+        #CloseModal1 :hover {
+            opacity: 0.3;
+        }
+        
+        .DesktopPic {
+            width: 450px;
+        }
+        
+        @media only screen and (max-width:768px) {
+            .H3 {
+                text-align: center;
+                color: red;
+                font-size: 19px;
+                font-weight: 400;
+                width: 95%;
+                margin: auto;
+            }
+            #ModalContent1 {
+                margin: auto;
+                padding: 4px;
+                border: 1px solid #888;
+                width: 100%;
+                border-radius: 7px;
+                background: white;
+                padding-top: 10px;
+                height: 1600px;
+                text-align: center;
+            }
+            #ModalContent2 {
+                margin: auto;
+                padding: 4px;
+                border: 1px solid #888;
+                width: 100%;
+                border-radius: 7px;
+                background: white;
+                padding-top: 10px;
+                height: 3200px;
+                text-align: center;
+            }
+            .DesktopPic {
+                width: 95%;
+            }
+        }
+        
+        .container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding-top: 75%;
+            /* 4:3 Aspect Ratio */
+        }
+        
+        .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1 style="margin:auto;font-size:30px;font-weight:400;text-align:center;margin-top:20px"><img src="https://huntdial2.b-cdn.net/neet/pics/free-7.png" style="width:40px;vertical-align: top"><img src="https://huntdial2.b-cdn.net/neet/pics/android-small.png" style="width:70px;vertical-align: middle"><img src="https://huntdial2.b-cdn.net/neet/pics/desktop1.png"
+            style="width:70px;vertical-align: middle"> Apps</h1>
+    <br/>
+    <h2 style="color:red;font-size:20px;font-weight:400;margin:auto;text-align:center">Desktop App Works on Internet</h2>
+    <br/>
+    <div style="margin:auto;text-align:center">
+        <button id="BtnAndroid">How To Install Android App</button>
+        <br/><br/>
+        <button id="BtnDesktop">How To Install Desktop App</button>
+        <br/><br/>
+
+
+        <h3 style="font-size:25px;font-weight:400;color:blue">Download Through Telegram Channel</h3>
+        <a href="https://t.me/hiphysics1" style="text-decoration:none;font-size:22px;color:red">t.me/hiphysics1</a><br/><br/>
+        <img src="https://huntdial2.b-cdn.net/neet/pics/channel.jpg" style="width:130px">
+        <p style="font-size:22px;font-weight:400;color:blue">Or By clicking Below</p>
+        <!--<a href="https://huntdial2.b-cdn.net/android/HiPhysics-release.apk" download="MyFile"  class="Anchor">
+<div style="text-align:center"><img src="pics/einstein.png" style="width:60px;vertical-align: middle"><br/>
+<div class="DownlaodDiv">HiPhysics&nbsp;<i class="fa-solid fa-file-arrow-down" style="font-size:25px;color:black"></i></div>
+</div>
+</a>-->
+        <a href="https://hineet.in/android-app/new/HiPhysics.apk" download="HiPhysics.apk" class="Anchor">
+            <div style="text-align:center"><img src="https://huntdial2.b-cdn.net/neet/pics/einstein.png" style="width:60px;vertical-align: middle"><br/>
+                <div class="DownlaodDiv">HiPhysics&nbsp;<i class="fa-solid fa-file-arrow-down" style="font-size:25px;color:black"></i></div>
+            </div>
+        </a>
+        <br/><br/>
+        <a href="https://hineet.in/android-app/new/HiMaths.apk" download="HiMaths.apk" class="Anchor">
+            <div style="text-align:center"><img src="https://huntdial2.b-cdn.net/neet/pics/pi.png" style="width:60px;vertical-align: middle"><br/>
+                <div class="DownlaodDiv">HiMaths&nbsp;<i class="fa-solid fa-file-arrow-down" style="font-size:25px;color:black"></i></div>
+            </div>
+        </a>
+        <br/><br/>
+        <a href="https://hineet.in/android-app/new/HiChemistry.apk" download="HiChemistry.apk" class="Anchor">
+            <div style="text-align:center"><img src="https://huntdial2.b-cdn.net/neet/pics/chemistry.png" style="width:60px;vertical-align: middle"><br/>
+                <div class="DownlaodDiv">HiChemistry&nbsp;<i class="fa-solid fa-file-arrow-down" style="font-size:25px;color:black"></i></div>
+            </div>
+        </a>
+        <br/><br/>
+        <a href="https://hineet.in/android-app/new/HiNEET.apk" download="HiNEET.apk" class="Anchor">
+            <div style="text-align:center"><img src="https://huntdial2.b-cdn.net/neet/pics/bacteria.png" style="width:60px;vertical-align: middle"><br/>
+                <div class="DownlaodDiv">HiNEET&nbsp;<i class="fa-solid fa-file-arrow-down" style="font-size:25px;color:black"></i></div>
+            </div>
+        </a>
+        <br/><br/>
+        <a href="https://hineet.in/android-app/new/TheSchoolMath.apk" download="TheSchoolMath.apk" class="Anchor">
+            <div style="text-align:center"><img src="https://huntdial2.b-cdn.net/neet/pics/think.png" style="width:60px;vertical-align: middle"><br/>
+                <div class="DownlaodDiv">TheSchoolMath&nbsp;<i class="fa-solid fa-file-arrow-down" style="font-size:25px;color:black"></i></div>
+            </div>
+        </a>
+        <br/><br/>
+          <a href="https://hineet.in/android-app/new/HiJEE.apk" download="HiJEE.apk" class="Anchor">
+            <div style="text-align:center"><img src="https://huntdial2.b-cdn.net/neet/pics/engineer.png" style="width:60px;vertical-align: middle"><br/>
+                <div class="DownlaodDiv">HiJEE&nbsp;<i class="fa-solid fa-file-arrow-down" style="font-size:25px;color:black"></i></div>
+            </div>
+        </a>
+        <br/><br/>
+         <a href="https://hineet.in/android-app/new/HiSSC.apk" download="HiSSC.apk" class="Anchor">
+            <div style="text-align:center"><img src="https://huntdial2.b-cdn.net/neet/pics/exam.png" style="width:60px;vertical-align: middle"><br/>
+                <div class="DownlaodDiv">HiSSC&nbsp;<i class="fa-solid fa-file-arrow-down" style="font-size:25px;color:black"></i></div>
+            </div>
+        </a>
+        <br/><br/>
+         <a href="https://hineet.in/android-app/new/HiCat.apk" download="HiCat.apk" class="Anchor">
+            <div style="text-align:center"><img src="https://huntdial2.b-cdn.net/neet/pics/manager.png" style="width:60px;vertical-align: middle"><br/>
+                <div class="DownlaodDiv">HiCAT&nbsp;<i class="fa-solid fa-file-arrow-down" style="font-size:25px;color:black"></i></div>
+            </div>
+        </a>
+        <br/><br/>
+        <a href="https://hineet.in/android-app/HiPhysics-Network-win32-x64.zip" download="HiPhysics-Network-win32-x64" class="Anchor">
+            <div style="text-align:center"><img src="https://huntdial2.b-cdn.net/neet/pics/desktop1.png" style="width:60px;vertical-align: middle"><br/>
+                <div class="DownlaodDiv">DeskTop App&nbsp;<i class="fa-solid fa-file-arrow-down" style="font-size:25px;color:black"></i></div>
+            </div>
+        </a>
+
+    </div>
+    <br/>
+    <h3 style="color:blue;font-size:16px;font-weight:400;text-align:center"><i class="fas fa-hand-point-right" style="color:red;font-size:20px"></i> At present, we are not on Google Play Store. This is due to some issue regarding the new policies of Google. We are hoping to fix the issue at the earliest.</h3>
+    <h3 style="color:red;font-size:20px;font-weight:400;text-align:center">In Couple of days,We will be on <br/>
+        <br/> <img src="https://huntdial2.b-cdn.net/neet/pics/uptodown.svg" style="width:130px;vertical-align: middle;"> <br/><br/><img src="https://huntdial2.b-cdn.net/neet/pics/indus.jpg" style="width:20px;vertical-align: middle;"> Indus App Store</h3>
+    <br/><br/><br/>
+    <div id="Modal1">
+        <div id="ModalContent1">
+
+            <button id="CloseModal1"><i class="fa-solid fa-xmark"></i></button>
+            <div style="clear:both"></div>
+            <div style="text-align:center">
+                <p><b>Step1-</b>Download From Telegram Channel or Direct from Website </p>
+                <p><b>Step2-</b>Downloaded File will be apk</p>
+                <p><b>Step3-</b>Google Play Protect Show Security Alert because It is not from Google Play</p>
+            </div>
+            <br/><br/>
+            <div class="container">
+                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/jtnItPyynwU"></iframe>
+            </div>
+            <br/><br/><br/>
+            <div class="container">
+                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/oU5fqwaY9YA"></iframe>
+            </div>
+            <br/><br/><br/>
+            <div class="container">
+                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/xHwKWx1yrOk"></iframe>
+            </div>
+            <br/><br/><br/>
+        </div>
+    </div>
+
+    <div id="Modal2">
+        <div id="ModalContent2">
+
+            <button id="CloseModal2"><i class="fa-solid fa-xmark"></i></button>
+            <div style="clear:both"></div>
+            <div style="text-align:center">
+                <p><b>Step1-</b>Download From Telegram Channel or Direct from Website </p>
+                <p><b>Step2-</b>Downloaded File will be HiPhysics-Network-win32-x64 Zip/Archive</p>
+                <p>It will be Zip/Archive File</p>
+                <p><b>Step3-</b>UnZip File by using WinRar,7Zip or Directly from Windows</p>
+                <img src="https://huntdial2.b-cdn.net/neet/pics/desktop-gif1.gif" class="DesktopPic">
+
+                <p><b>Step4-</b>Find .exe in unzipped part as Shown Below</p>
+                <img src="https://huntdial2.b-cdn.net/neet/pics/desktop-app-2.png" class="DesktopPic">
+                <br/>
+                <img src="https://huntdial2.b-cdn.net/neet/pics/desktop-gif2.gif" class="DesktopPic">
+
+
+                <p><b>Step5-</b>Click on It Your Application will Start</p>
+                <p><b>Step5-</b>In Windows 11 Smart Screen will Protect It Because Binaries are not Signed on Microsoft</p>
+                <img src="https://huntdial2.b-cdn.net/neet/pics/error2.jpg" class="DesktopPic">
+                <p><b>Step6-</b>Click on More Info</p>
+                <img src="https://huntdial2.b-cdn.net/neet/pics/error3.png" class="DesktopPic">
+                <p>Your Application will Start </p>
+                <br/><br/>
+                <h3 style="color:blue;font-size:26px;font-weight:400;text-align:center">Create a Short Cut For Easy Access</h3>
+                <img src="https://huntdial2.b-cdn.net/neet/pics/desktop4.jpg" class="DesktopPic">
+                <br/><br/>
+                <img src="https://huntdial2.b-cdn.net/neet/pics/desktop-gif4.gif" class="DesktopPic">
+
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+        document.getElementById("BtnAndroid").addEventListener("click", function() {
+            document.getElementById("Modal1").style.display = "block";
+        })
+        document.getElementById("CloseModal1").addEventListener("click", function() {
+            document.getElementById("Modal1").style.display = "none";
+        })
+        document.getElementById("BtnDesktop").addEventListener("click", function() {
+            document.getElementById("Modal2").style.display = "block";
+        })
+        document.getElementById("CloseModal2").addEventListener("click", function() {
+            document.getElementById("Modal2").style.display = "none";
+        })
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+/>
+</body>
+
+
+</html>
