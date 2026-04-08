@@ -178,9 +178,12 @@
 </head>
 
 <body>
-
+<br/>
+<a href="" id="anchor"><i class="fas fa-arrow-circle-left" style="float:right;color:blue;font-size:45px;padding-right:14px"></i></a>
+<br/>
+<br/>
 <h1 style="margin:auto;font-size:30px;font-weight:400;text-align:center;margin-top:20px"><img src="https://xi1yklou65gh.b-cdn.net/pics/free-7.png" style="width:40px;vertical-align: top"><img src="https://xi1yklou65gh.b-cdn.net/pics/android-small.png" style="width:70px;vertical-align: middle"><img src="https://xi1yklou65gh.b-cdn.net/pics/desktop1.png"
-            style="width:70px;vertical-align: middle"> Apps</h1>
+            style="width:70px;vertical-align: middle">Android Desktop Apps</h1>
     <br/>
     <h2 style="color:red;font-size:20px;font-weight:400;margin:auto;text-align:center">Desktop App Works on Internet</h2>
     <br/>
@@ -318,6 +321,17 @@
         </div>
     </div>
     <script>
+         const URL = new URLSearchParams(window.location.search);
+                 let RedirectURL = URL.get('r'); // Returns '123' if ?product_id=123
+               // window.history.replaceState(null, '', window.location.pathname);
+                 if (RedirectURL === null) {
+
+                 }
+                 else  {
+
+                     document.getElementById("anchor").href= RedirectURL;
+
+                 }
         document.getElementById("BtnAndroid").addEventListener("click", function() {
             document.getElementById("Modal1").style.display = "block";
         })
